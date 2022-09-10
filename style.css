@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Yanone+Kaffeesatz:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+body{
+    background-image: url(background2.png);
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+h1, h2, p{
+    text-align: center;
+}
+
+header h1{
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+header p{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#vs h2{
+    font-size: 60px;
+}
+
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: space;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    box-shadow: 4px 5px 7px gray;
+    padding: 15px;
+    height: 400px;
+    width: 450px;
+}
+
+.player h2{
+    font-size: 40px;
+}
+
+.game{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.result{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dino{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#retry{
+    border-radius: 10px;
+    background-color: #5b3f5b;
+    border: none;
+    color: aliceblue;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+  #retry span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #retry span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #retry:hover span{
+    padding-right: 25px;
+  }
+  
+  #retry:hover span:after{
+    opacity: 1;
+    right: 0;
+  }
+
+  .stamp{
+    position : absolute;
+    top: 25%;
+    z-index: 2;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 70px; 
+    border-radius: 10px;
+    padding: 10px;
+    transform: rotate(5deg);
+  }
+
+  .win{
+    left: 43.5%;
+    color: #1a4f76;
+    border: 10px double #1a4f76;
+  }
+
+  .lose{
+    left: 44%;
+    color: #cc0000;
+    border: 10px double #cc0000;
+  }
+
+  .draw{
+    left: 41.5%;
+    color: #674ea7;
+    border: 10px double #674ea7;
+  }
+
+  .hidden{
+    display: none;
+  }

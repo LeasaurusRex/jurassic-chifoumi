@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="LeaSaur">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="chifoumi.js"></script>
+        <title>Jeu du Chifoumi</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Jurassic Chifoumi</h1>
+            <p>Affrontez le dinosaure en cliquant sur la pierre, la feuille ou les dents du croco, et vérifiez qui gagne la partie !</br>
+            Règles : la pierre l'emporte sur les dents du croco, les dents du croco sur la feuille et la feuille sur la pierre.</p>
+        </header>
+
+        <img class="dino" src="trex.png" width="400px" alt="Dessin de T-Rex souriant">
+
+        <div class="game">
+            <div class="player">
+                <h2>Vous</h2>
+                <div id="player-moves-container">
+                    <img id="rock" class="move" src="rock.png" width=100px alt="Dessin de pierre">
+                    <img id="paper" class="move" src="paper.png" width=120px alt="Dessin d'une feuille">
+                    <img id="scissors" class="move" src="scissors.png" width=175px alt="Dessin de ciseaux">
+                </div> 
+            </div>
+            <div id="vs">
+                <h2>VS</h2>
+            </div>
+            <div class="player">
+                <h2>Le Dino</h2>
+                <img id="iaImg"  class="hidden" src="" width=150px alt="Dessin choisi par l'ordinateur">
+            </div>
+        </div>
+        <div class="result">
+            <p id="message" class="stamp hidden"></p>
+            <button id="retry" class="hidden" type="button"><span>Rejouez !</span></button>
+        </div>
+
+
+    </body>
+</html>
